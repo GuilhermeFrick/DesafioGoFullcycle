@@ -1,0 +1,18 @@
+# Especificar uma versão estável específica do Golang.
+FROM golang:1.18
+
+# Define o diretório de trabalho dentro do container.
+WORKDIR /go/src/app
+
+# Copia seu arquivo de código fonte Go para o diretório de trabalho.
+COPY src/fullcyclerocks.go .
+
+# Inicializa o módulo Go e baixa as dependências.
+RUN go mod init fullcyclerocks
+RUN go mod tidy
+
+# Compila o código Go. O resultado será um executável.
+RUN go build -o /go/bin/fullcyclerocks
+
+# Define o comando que será executado quando o container iniciar.
+CMD ["/go/bin/fullcyclerocks"]
