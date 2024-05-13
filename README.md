@@ -14,7 +14,7 @@ docker build -t <seu-user>/golang:latest .
 ```
 4. Execute a Imagem Docker:Após a construção da imagem, execute o seguinte comando para rodar o container:
 ````
-docker run  <seu-user>/golang
+docker run  <seu-user>/golang:latest
 ````
 5. Alternativa: Download Direto da Imagem Docker Hub
 ````
