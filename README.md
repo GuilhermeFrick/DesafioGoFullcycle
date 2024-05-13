@@ -21,3 +21,7 @@ docker run  <seu-user>/golang:latest
 docker pull frickdev/golang:prod
 ````
 
+6.  Execute a Imagem Docker:Após a o pull da imagem
+````
+docker run frickdev/golang:prod
+````
