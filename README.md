@@ -16,7 +16,7 @@ docker build -t <seu-user>/golang:latest .
 ````
 docker run  <seu-user>/golang:latest
 ````
-5. Alternativa: Download Direto da Imagem Docker Hub
+5. [`Alternativa: Download Direto da Imagem Docker Hub`](https://hub.docker.com/r/frickdev/golang/tags)
 ````
 docker pull frickdev/golang:prod
 ````
